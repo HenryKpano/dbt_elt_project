@@ -6,12 +6,16 @@ Try running the following commands:
 - dbt run
 - dbt test
 
-Models created
-- Customers: This model creats the total information about the customers in the company
+# Models created
+- Customers: 
+    This model creats the total information about the customers in the company.
+
 - 
 
-Model Test Cases Written
+# Model Test Cases Written
 - Cutomers: 
+
+- Payments:
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)

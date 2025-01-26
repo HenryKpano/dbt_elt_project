@@ -12,10 +12,15 @@ Try running the following commands:
 
 - 
 
+## Seed Model created
+- Stadium: 
+
+
 ## Model Test Cases Written
 - Cutomers: 
 
 - Payments:
+
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)

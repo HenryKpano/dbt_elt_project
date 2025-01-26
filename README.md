@@ -29,8 +29,12 @@ Try running the following commands:
     payment_id unique, not null
     paymentmethod not null
 
+
 How to setup all aspects and run this project smoothly can be found in the article link below
 - Henry Medium Post:[Click Here]()
+
+
+
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)

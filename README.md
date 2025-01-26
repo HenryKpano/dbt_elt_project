@@ -1,6 +1,6 @@
 Welcome to my dbt project!
 
-### This project is to create models in BigQuery and connect the models to Apache Superset using Preset.io for visualization purposes.
+This project is to create models in BigQuery and connect the models to Apache Superset using Preset.io for visualization purposes.
 
 Try running the following commands:
 - dbt run

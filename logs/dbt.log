@@ -5094,3 +5094,1433 @@ where id = 1
 [0m01:09:17.339368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071a4810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075dd190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037b1410>]}
 [0m01:09:17.339583 [debug] [MainThread]: Flushing usage events
 [0m01:09:17.556495 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:10:28.922580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109979fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099f5c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d7190>]}
+
+
+============================== 10:10:28.928402 | bdf4701c-3b69-45a5-9319-65490052f968 ==============================
+[0m10:10:28.928402 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:10:28.929011 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/henk/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:10:29.683009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c56650>]}
+[0m10:10:29.705540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a65110>]}
+[0m10:10:29.705881 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m10:10:29.798200 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m10:10:29.867785 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m10:10:29.868090 [debug] [MainThread]: Partial parsing: added file: dbt_crash_course_vone://models/payments.sql
+[0m10:10:30.014042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092fb210>]}
+[0m10:10:30.048403 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m10:10:30.050305 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m10:10:30.062202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119a8e810>]}
+[0m10:10:30.062473 [info ] [MainThread]: Found 4 models, 1 seed, 4 data tests, 489 macros
+[0m10:10:30.062640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1199cd110>]}
+[0m10:10:30.063517 [info ] [MainThread]: 
+[0m10:10:30.063684 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:10:30.063811 [info ] [MainThread]: 
+[0m10:10:30.064033 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:10:30.065861 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crash-course-vone'
+[0m10:10:30.066053 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:10:30.495757 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-crash-course-vone, now list_dbt-crash-course-vone_dbt_crash_course)
+[0m10:10:30.496240 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:10:30.938692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118ca8110>]}
+[0m10:10:30.939568 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:10:30.942915 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.customers
+[0m10:10:30.943516 [info ] [Thread-1 (]: 1 of 4 START sql table model dbt_crash_course.customers ........................ [RUN]
+[0m10:10:30.943989 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-crash-course-vone_dbt_crash_course, now model.dbt_crash_course_vone.customers)
+[0m10:10:30.944319 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.customers
+[0m10:10:30.953111 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.customers"
+[0m10:10:30.954452 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.customers
+[0m10:10:30.966708 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:10:31.446945 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.customers"
+[0m10:10:31.448177 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.customers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.customers"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+    select
+        id,
+        first_name,
+        last_name
+    from dbt-tutorial.jaffle_shop.customers
+),
+
+orders as (
+    select
+        id,
+        user_id,
+        order_date,
+        status
+    from dbt-tutorial.jaffle_shop.orders
+),
+
+customer_orders as (
+    select
+        user_id,
+        min(order_date) as first_order,
+        max(order_date) as most_recent_order,
+        count(id) as number_or_orders
+    from orders
+    group by user_id
+),
+
+final as (
+    select
+        customers.id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order,
+        customer_orders.most_recent_order,
+        customer_orders.number_or_orders
+    from customers
+    left join customer_orders
+        on customers.id = customer_orders.user_id 
+)
+
+select
+    *
+from final
+    );
+  
+[0m10:10:32.000155 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:4e893c54-f480-42b7-a8c4-687af1690a97&page=queryresults
+[0m10:10:34.567967 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118cba6d0>]}
+[0m10:10:34.568598 [info ] [Thread-1 (]: 1 of 4 OK created sql table model dbt_crash_course.customers ................... [[32mCREATE TABLE (100.0 rows, 4.3 KiB processed)[0m in 3.62s]
+[0m10:10:34.569003 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.customers
+[0m10:10:34.569274 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:10:34.569583 [info ] [Thread-1 (]: 2 of 4 START sql table model dbt_crash_course.my_first_dbt_model ............... [RUN]
+[0m10:10:34.569922 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_crash_course_vone.customers, now model.dbt_crash_course_vone.my_first_dbt_model)
+[0m10:10:34.570176 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:10:34.572000 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.my_first_dbt_model"
+[0m10:10:34.572743 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:10:34.574889 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:10:34.983351 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.my_first_dbt_model"
+[0m10:10:34.984600 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m10:10:35.355390 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:3850512a-3146-487d-8569-9589d85506b9&page=queryresults
+[0m10:10:37.659181 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119fd9210>]}
+[0m10:10:37.660597 [info ] [Thread-1 (]: 2 of 4 OK created sql table model dbt_crash_course.my_first_dbt_model .......... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.09s]
+[0m10:10:37.661359 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:10:37.661830 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.payments
+[0m10:10:37.662551 [info ] [Thread-1 (]: 3 of 4 START sql table model dbt_crash_course.payments ......................... [RUN]
+[0m10:10:37.663080 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_crash_course_vone.my_first_dbt_model, now model.dbt_crash_course_vone.payments)
+[0m10:10:37.663465 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.payments
+[0m10:10:37.666353 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.payments"
+[0m10:10:37.667433 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.payments
+[0m10:10:37.670581 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.payments"
+[0m10:10:37.671519 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.payments: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.payments"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with payment as (
+    select
+        id,
+        orderid,
+        paymentmethod,
+        status,
+        amount,
+        created
+    from dbt-tutorial.stripe
+),
+
+customer_order as (
+    select
+        id,
+        user_id,
+        order_date,
+        status as order_status
+    from dbt-tutorial.jaffle_shop.orders
+),
+
+customers as (
+    select
+        id,
+        first_name,
+        last_name
+    from dbt-tutorial.jaffle_shop.customers
+),
+
+final as (
+    select 
+        payment.id as payment_id,
+        payment.paymentmethod,
+        payment.status as payment_status,
+        payment.amount,
+        payment.created as payment_date,
+        customer_order.user_id as user_id,
+        customer_order.order_date,
+        customer_order.order_status,
+        customers.first_name,
+        customers.last_name
+    from payment
+    left join customer_order
+        on payment.orderid = customer_order.id
+    left join customers
+        on customer_order.user_id = customers.id
+)
+
+select
+    *
+from final
+    );
+  
+[0m10:10:37.671971 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:10:38.386174 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:122c3aae-a569-411d-ac39-597d9477ca13&page=queryresults
+[0m10:10:38.387279 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:122c3aae-a569-411d-ac39-597d9477ca13&page=queryresults
+[0m10:10:38.397184 [debug] [Thread-1 (]: Database Error in model payments (models/payments.sql)
+  Not found: Dataset dbt-crash-course-vone:dbt-tutorial was not found in location US
+  compiled code at target/run/dbt_crash_course_vone/models/payments.sql
+[0m10:10:38.397935 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f9ff10>]}
+[0m10:10:38.398654 [error] [Thread-1 (]: 3 of 4 ERROR creating sql table model dbt_crash_course.payments ................ [[31mERROR[0m in 0.73s]
+[0m10:10:38.399242 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.payments
+[0m10:10:38.399644 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:10:38.400194 [debug] [Thread-4 (]: Marking all children of 'model.dbt_crash_course_vone.payments' to be skipped because of status 'error'.  Reason: Database Error in model payments (models/payments.sql)
+  Not found: Dataset dbt-crash-course-vone:dbt-tutorial was not found in location US
+  compiled code at target/run/dbt_crash_course_vone/models/payments.sql.
+[0m10:10:38.400813 [info ] [Thread-1 (]: 4 of 4 START sql table model dbt_crash_course.my_second_dbt_model .............. [RUN]
+[0m10:10:38.402423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_crash_course_vone.payments, now model.dbt_crash_course_vone.my_second_dbt_model)
+[0m10:10:38.402801 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:10:38.407145 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.my_second_dbt_model"
+[0m10:10:38.407824 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:10:38.409616 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:10:38.926058 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.my_second_dbt_model"
+[0m10:10:38.927105 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.my_second_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`my_second_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from `dbt-crash-course-vone`.`dbt_crash_course`.`my_first_dbt_model`
+where id = 1
+    );
+  
+[0m10:10:39.403585 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:12c076de-1de8-415c-8c4a-78b81f275f97&page=queryresults
+[0m10:10:41.719632 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdf4701c-3b69-45a5-9319-65490052f968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f54a90>]}
+[0m10:10:41.721972 [info ] [Thread-1 (]: 4 of 4 OK created sql table model dbt_crash_course.my_second_dbt_model ......... [[32mCREATE TABLE (1.0 rows, 8.0 Bytes processed)[0m in 3.32s]
+[0m10:10:41.722729 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:10:41.724462 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:10:41.726564 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:10:41.726854 [debug] [MainThread]: Connection 'model.dbt_crash_course_vone.my_second_dbt_model' was properly closed.
+[0m10:10:41.727252 [info ] [MainThread]: 
+[0m10:10:41.727553 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 11.66 seconds (11.66s).
+[0m10:10:41.728681 [debug] [MainThread]: Command end result
+[0m10:10:41.747747 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m10:10:41.749540 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m10:10:41.754028 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/run_results.json
+[0m10:10:41.754259 [info ] [MainThread]: 
+[0m10:10:41.754487 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m10:10:41.754665 [info ] [MainThread]: 
+[0m10:10:41.754885 [error] [MainThread]:   Database Error in model payments (models/payments.sql)
+  Not found: Dataset dbt-crash-course-vone:dbt-tutorial was not found in location US
+  compiled code at target/run/dbt_crash_course_vone/models/payments.sql
+[0m10:10:41.755050 [info ] [MainThread]: 
+[0m10:10:41.755223 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m10:10:41.757642 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 12.873237, "process_in_blocks": "0", "process_kernel_time": 0.427416, "process_mem_max_rss": "205602816", "process_out_blocks": "0", "process_user_time": 1.737562}
+[0m10:10:41.757931 [debug] [MainThread]: Command `dbt run` failed at 10:10:41.757879 after 12.87 seconds
+[0m10:10:41.758198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105265390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105265250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105265350>]}
+[0m10:10:41.758418 [debug] [MainThread]: Flushing usage events
+[0m10:10:42.244283 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:11:55.963236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d7bd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107df5b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107df6110>]}
+
+
+============================== 10:11:55.967088 | b9d9bc36-db7e-4cce-bf11-0e34abc79447 ==============================
+[0m10:11:55.967088 [info ] [MainThread]: Running with dbt=1.9.1
+[0m10:11:55.967611 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/logs', 'profiles_dir': '/Users/henk/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m10:11:56.660690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1319f07d0>]}
+[0m10:11:56.685205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c7c7d0>]}
+[0m10:11:56.685651 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m10:11:56.770146 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m10:11:56.839813 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:11:56.840180 [debug] [MainThread]: Partial parsing: updated file: dbt_crash_course_vone://models/payments.sql
+[0m10:11:56.992670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131e9b510>]}
+[0m10:11:57.027825 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m10:11:57.029522 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m10:11:57.039971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1322840d0>]}
+[0m10:11:57.040250 [info ] [MainThread]: Found 4 models, 1 seed, 4 data tests, 489 macros
+[0m10:11:57.040420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131eca250>]}
+[0m10:11:57.041304 [info ] [MainThread]: 
+[0m10:11:57.041476 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:11:57.041601 [info ] [MainThread]: 
+[0m10:11:57.041825 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:11:57.043656 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crash-course-vone'
+[0m10:11:57.043841 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:11:57.434036 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-crash-course-vone, now list_dbt-crash-course-vone_dbt_crash_course)
+[0m10:11:57.434768 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:11:57.829746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132223c90>]}
+[0m10:11:57.830730 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:11:57.834472 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.customers
+[0m10:11:57.835098 [info ] [Thread-1 (]: 1 of 4 START sql table model dbt_crash_course.customers ........................ [RUN]
+[0m10:11:57.835609 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-crash-course-vone_dbt_crash_course, now model.dbt_crash_course_vone.customers)
+[0m10:11:57.835983 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.customers
+[0m10:11:57.845471 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.customers"
+[0m10:11:57.846393 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.customers
+[0m10:11:57.858584 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:11:58.289159 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.customers"
+[0m10:11:58.290515 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.customers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.customers"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+    select
+        id,
+        first_name,
+        last_name
+    from dbt-tutorial.jaffle_shop.customers
+),
+
+orders as (
+    select
+        id,
+        user_id,
+        order_date,
+        status
+    from dbt-tutorial.jaffle_shop.orders
+),
+
+customer_orders as (
+    select
+        user_id,
+        min(order_date) as first_order,
+        max(order_date) as most_recent_order,
+        count(id) as number_or_orders
+    from orders
+    group by user_id
+),
+
+final as (
+    select
+        customers.id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order,
+        customer_orders.most_recent_order,
+        customer_orders.number_or_orders
+    from customers
+    left join customer_orders
+        on customers.id = customer_orders.user_id 
+)
+
+select
+    *
+from final
+    );
+  
+[0m10:11:58.827576 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:53e0e7ab-6181-4941-a8c3-daab4aa6159b&page=queryresults
+[0m10:12:01.672298 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1319a8450>]}
+[0m10:12:01.673188 [info ] [Thread-1 (]: 1 of 4 OK created sql table model dbt_crash_course.customers ................... [[32mCREATE TABLE (100.0 rows, 4.3 KiB processed)[0m in 3.83s]
+[0m10:12:01.673730 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.customers
+[0m10:12:01.674090 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:12:01.674579 [info ] [Thread-1 (]: 2 of 4 START sql table model dbt_crash_course.my_first_dbt_model ............... [RUN]
+[0m10:12:01.675025 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_crash_course_vone.customers, now model.dbt_crash_course_vone.my_first_dbt_model)
+[0m10:12:01.675341 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:12:01.677907 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.my_first_dbt_model"
+[0m10:12:01.678562 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:12:01.680355 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:12:02.099679 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.my_first_dbt_model"
+[0m10:12:02.103374 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m10:12:02.468380 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:e1c7e31d-86c4-4369-9cac-994ca9e3e7bd&page=queryresults
+[0m10:12:04.806737 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13278b190>]}
+[0m10:12:04.807901 [info ] [Thread-1 (]: 2 of 4 OK created sql table model dbt_crash_course.my_first_dbt_model .......... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.13s]
+[0m10:12:04.808579 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.my_first_dbt_model
+[0m10:12:04.809033 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.payments
+[0m10:12:04.809806 [info ] [Thread-1 (]: 3 of 4 START sql table model dbt_crash_course.payments ......................... [RUN]
+[0m10:12:04.810392 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_crash_course_vone.my_first_dbt_model, now model.dbt_crash_course_vone.payments)
+[0m10:12:04.810807 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.payments
+[0m10:12:04.813583 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.payments"
+[0m10:12:04.814579 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.payments
+[0m10:12:04.817652 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.payments"
+[0m10:12:04.818706 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.payments: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.payments"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with payment as (
+    select
+        id,
+        orderid,
+        paymentmethod,
+        status,
+        amount,
+        created
+    from dbt-tutorial.stripe.payment
+),
+
+customer_order as (
+    select
+        id,
+        user_id,
+        order_date,
+        status as order_status
+    from dbt-tutorial.jaffle_shop.orders
+),
+
+customers as (
+    select
+        id,
+        first_name,
+        last_name
+    from dbt-tutorial.jaffle_shop.customers
+),
+
+final as (
+    select 
+        payment.id as payment_id,
+        payment.paymentmethod,
+        payment.status as payment_status,
+        payment.amount,
+        payment.created as payment_date,
+        customer_order.user_id as user_id,
+        customer_order.order_date,
+        customer_order.order_status,
+        customers.first_name,
+        customers.last_name
+    from payment
+    left join customer_order
+        on payment.orderid = customer_order.id
+    left join customers
+        on customer_order.user_id = customers.id
+)
+
+select
+    *
+from final
+    );
+  
+[0m10:12:04.819164 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:12:05.753894 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:72d86955-3b3e-4414-8663-fc76d848ced0&page=queryresults
+[0m10:12:08.321394 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132287c50>]}
+[0m10:12:08.323679 [info ] [Thread-1 (]: 3 of 4 OK created sql table model dbt_crash_course.payments .................... [[32mCREATE TABLE (120.0 rows, 11.5 KiB processed)[0m in 3.51s]
+[0m10:12:08.324555 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.payments
+[0m10:12:08.325132 [debug] [Thread-1 (]: Began running node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:12:08.325916 [info ] [Thread-1 (]: 4 of 4 START sql table model dbt_crash_course.my_second_dbt_model .............. [RUN]
+[0m10:12:08.326555 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_crash_course_vone.payments, now model.dbt_crash_course_vone.my_second_dbt_model)
+[0m10:12:08.326970 [debug] [Thread-1 (]: Began compiling node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:12:08.333015 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_crash_course_vone.my_second_dbt_model"
+[0m10:12:08.334115 [debug] [Thread-1 (]: Began executing node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:12:08.336584 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:12:08.779440 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_crash_course_vone.my_second_dbt_model"
+[0m10:12:08.782245 [debug] [Thread-1 (]: On model.dbt_crash_course_vone.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "model.dbt_crash_course_vone.my_second_dbt_model"} */
+
+  
+    
+
+    create or replace table `dbt-crash-course-vone`.`dbt_crash_course`.`my_second_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Use the `ref` function to select from other models
+
+select *
+from `dbt-crash-course-vone`.`dbt_crash_course`.`my_first_dbt_model`
+where id = 1
+    );
+  
+[0m10:12:09.248670 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:70086a11-613f-41a4-a881-be8b2ab33d88&page=queryresults
+[0m10:12:17.133715 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9d9bc36-db7e-4cce-bf11-0e34abc79447', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13272fed0>]}
+[0m10:12:17.142549 [info ] [Thread-1 (]: 4 of 4 OK created sql table model dbt_crash_course.my_second_dbt_model ......... [[32mCREATE TABLE (1.0 rows, 8.0 Bytes processed)[0m in 8.80s]
+[0m10:12:17.143380 [debug] [Thread-1 (]: Finished running node model.dbt_crash_course_vone.my_second_dbt_model
+[0m10:12:17.145385 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:12:17.147030 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:12:17.147213 [debug] [MainThread]: Connection 'model.dbt_crash_course_vone.my_second_dbt_model' was properly closed.
+[0m10:12:17.147497 [info ] [MainThread]: 
+[0m10:12:17.147672 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 20.11 seconds (20.11s).
+[0m10:12:17.148383 [debug] [MainThread]: Command end result
+[0m10:12:17.164225 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m10:12:17.166467 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m10:12:17.172587 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/run_results.json
+[0m10:12:17.172856 [info ] [MainThread]: 
+[0m10:12:17.173273 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:12:17.173461 [info ] [MainThread]: 
+[0m10:12:17.174045 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m10:12:17.182746 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 21.26244, "process_in_blocks": "0", "process_kernel_time": 0.451666, "process_mem_max_rss": "205357056", "process_out_blocks": "0", "process_user_time": 1.784554}
+[0m10:12:17.183628 [debug] [MainThread]: Command `dbt run` succeeded at 10:12:17.183563 after 21.26 seconds
+[0m10:12:17.184292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107097950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b9bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a61410>]}
+[0m10:12:17.184509 [debug] [MainThread]: Flushing usage events
+[0m10:12:17.593030 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:02:37.802575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11218fe90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123f9ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123fa4d0>]}
+
+
+============================== 14:02:37.806294 | f13c4eb1-8d01-44de-89a8-d4d61f30087f ==============================
+[0m14:02:37.806294 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:02:37.806713 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/henk/.dbt', 'log_path': '/Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:02:38.749652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f13c4eb1-8d01-44de-89a8-d4d61f30087f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132073c10>]}
+[0m14:02:38.772345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f13c4eb1-8d01-44de-89a8-d4d61f30087f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc4790>]}
+[0m14:02:38.772683 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:02:38.858606 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m14:02:38.932522 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:02:38.932963 [debug] [MainThread]: Partial parsing: added file: dbt_crash_course_vone://models/schema.yml
+[0m14:02:39.089544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f13c4eb1-8d01-44de-89a8-d4d61f30087f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1323454d0>]}
+[0m14:02:39.126142 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m14:02:39.129751 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m14:02:39.150005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f13c4eb1-8d01-44de-89a8-d4d61f30087f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1329c3e50>]}
+[0m14:02:39.150361 [info ] [MainThread]: Found 4 models, 1 seed, 12 data tests, 489 macros
+[0m14:02:39.150558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f13c4eb1-8d01-44de-89a8-d4d61f30087f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13270e850>]}
+[0m14:02:39.151671 [info ] [MainThread]: 
+[0m14:02:39.151856 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:02:39.151982 [info ] [MainThread]: 
+[0m14:02:39.152212 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:02:39.154122 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crash-course-vone_dbt_crash_course'
+[0m14:02:39.154299 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:02:39.653059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f13c4eb1-8d01-44de-89a8-d4d61f30087f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132702950>]}
+[0m14:02:39.653716 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:02:39.656699 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:02:39.657114 [info ] [Thread-1 (]: 1 of 12 START test not_null_customers_first_name ............................... [RUN]
+[0m14:02:39.657524 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-crash-course-vone_dbt_crash_course, now test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b)
+[0m14:02:39.657843 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:02:39.671892 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b"
+[0m14:02:39.672965 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:02:39.687007 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b"
+[0m14:02:39.687693 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_name
+from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+where first_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:39.687963 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:40.679214 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:7d0aa833-19ce-42e9-88aa-883743e9ba66&page=queryresults
+[0m14:02:41.295289 [info ] [Thread-1 (]: 1 of 12 PASS not_null_customers_first_name ..................................... [[32mPASS[0m in 1.64s]
+[0m14:02:41.295797 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:02:41.296063 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:02:41.296522 [info ] [Thread-1 (]: 2 of 12 START test not_null_customers_id ....................................... [RUN]
+[0m14:02:41.297035 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b, now test.dbt_crash_course_vone.not_null_customers_id.422908bfae)
+[0m14:02:41.297366 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:02:41.300406 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_customers_id.422908bfae"
+[0m14:02:41.300954 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:02:41.302572 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_customers_id.422908bfae"
+[0m14:02:41.303076 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_customers_id.422908bfae: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_customers_id.422908bfae"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:41.303346 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:42.070760 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:d1bb77ed-e9d8-4b50-bde0-6ae4c1cb240e&page=queryresults
+[0m14:02:42.592403 [info ] [Thread-1 (]: 2 of 12 PASS not_null_customers_id ............................................. [[32mPASS[0m in 1.30s]
+[0m14:02:42.593393 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:02:42.593840 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:02:42.594412 [info ] [Thread-1 (]: 3 of 12 START test not_null_customers_last_name ................................ [RUN]
+[0m14:02:42.594861 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_customers_id.422908bfae, now test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb)
+[0m14:02:42.595194 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:02:42.600761 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb"
+[0m14:02:42.601998 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:02:42.605254 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb"
+[0m14:02:42.606487 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select last_name
+from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+where last_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:42.606940 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:43.346358 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:15d78347-9ca7-4a67-9b1a-598c65cbb3c8&page=queryresults
+[0m14:02:43.885864 [info ] [Thread-1 (]: 3 of 12 PASS not_null_customers_last_name ...................................... [[32mPASS[0m in 1.29s]
+[0m14:02:43.887291 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:02:43.888220 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:02:43.888739 [info ] [Thread-1 (]: 4 of 12 START test not_null_my_first_dbt_model_id .............................. [RUN]
+[0m14:02:43.889202 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb, now test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:02:43.889653 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:02:43.894333 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:02:43.896568 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:02:43.900866 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:02:43.902151 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `dbt-crash-course-vone`.`dbt_crash_course`.`my_first_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:43.902690 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:44.716376 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:22282489-b041-4462-bcab-1e783bd5ed68&page=queryresults
+[0m14:02:45.216989 [error] [Thread-1 (]: 4 of 12 FAIL 1 not_null_my_first_dbt_model_id .................................. [[31mFAIL 1[0m in 1.33s]
+[0m14:02:45.218064 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:02:45.218511 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:02:45.219017 [info ] [Thread-1 (]: 5 of 12 START test not_null_my_second_dbt_model_id ............................. [RUN]
+[0m14:02:45.219589 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:02:45.219946 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:02:45.225377 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:02:45.226653 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:02:45.229476 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:02:45.230768 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `dbt-crash-course-vone`.`dbt_crash_course`.`my_second_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:45.231262 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:46.033614 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:2cfc524b-591e-41a4-80e7-3b2394bb67c8&page=queryresults
+[0m14:02:46.546960 [info ] [Thread-1 (]: 5 of 12 PASS not_null_my_second_dbt_model_id ................................... [[32mPASS[0m in 1.33s]
+[0m14:02:46.548146 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:02:46.548648 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:02:46.549174 [info ] [Thread-1 (]: 6 of 12 START test not_null_payments_payment_id ................................ [RUN]
+[0m14:02:46.549763 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd)
+[0m14:02:46.550171 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:02:46.556334 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd"
+[0m14:02:46.557757 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:02:46.560589 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd"
+[0m14:02:46.561358 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select payment_id
+from `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+where payment_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:46.561789 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:47.372771 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:50588a70-6a15-4784-a3bf-5596cb08c3de&page=queryresults
+[0m14:02:47.905342 [info ] [Thread-1 (]: 6 of 12 PASS not_null_payments_payment_id ...................................... [[32mPASS[0m in 1.36s]
+[0m14:02:47.906486 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:02:47.906912 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:02:47.907372 [info ] [Thread-1 (]: 7 of 12 START test not_null_payments_paymentmethod ............................. [RUN]
+[0m14:02:47.907875 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd, now test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87)
+[0m14:02:47.908242 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:02:47.913529 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87"
+[0m14:02:47.914665 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:02:47.917164 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87"
+[0m14:02:47.917962 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select paymentmethod
+from `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+where paymentmethod is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:47.918354 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:48.666676 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:df4754b5-92bc-44ae-a34e-0aa97525362d&page=queryresults
+[0m14:02:49.212410 [info ] [Thread-1 (]: 7 of 12 PASS not_null_payments_paymentmethod ................................... [[32mPASS[0m in 1.30s]
+[0m14:02:49.213330 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:02:49.213742 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:02:49.214214 [info ] [Thread-1 (]: 8 of 12 START test unique_customers_id ......................................... [RUN]
+[0m14:02:49.214725 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87, now test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20)
+[0m14:02:49.215083 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:02:49.223922 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20"
+[0m14:02:49.225223 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:02:49.227879 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20"
+[0m14:02:49.229025 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:49.229450 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:50.002467 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:75b6c183-4d58-4ac0-b6d9-41e0020106e2&page=queryresults
+[0m14:02:50.489588 [info ] [Thread-1 (]: 8 of 12 PASS unique_customers_id ............................................... [[32mPASS[0m in 1.27s]
+[0m14:02:50.490318 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:02:50.490602 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:02:50.490840 [info ] [Thread-1 (]: 9 of 12 START test unique_my_first_dbt_model_id ................................ [RUN]
+[0m14:02:50.491290 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20, now test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321)
+[0m14:02:50.491703 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:02:50.496243 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321"
+[0m14:02:50.497156 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:02:50.501849 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321"
+[0m14:02:50.502883 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:50.503247 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:51.614536 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:49004104-b8fd-4a2a-8b5e-5cae92a740fe&page=queryresults
+[0m14:02:52.124321 [info ] [Thread-1 (]: 9 of 12 PASS unique_my_first_dbt_model_id ...................................... [[32mPASS[0m in 1.63s]
+[0m14:02:52.126232 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:02:52.126611 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:02:52.126951 [info ] [Thread-1 (]: 10 of 12 START test unique_my_second_dbt_model_id .............................. [RUN]
+[0m14:02:52.127356 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321, now test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:02:52.127628 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:02:52.131362 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:02:52.132265 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:02:52.135021 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:02:52.135774 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`my_second_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:52.136220 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:52.979035 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:6444586e-84f4-4c11-ad7a-b0a38fdb4045&page=queryresults
+[0m14:02:53.513862 [info ] [Thread-1 (]: 10 of 12 PASS unique_my_second_dbt_model_id .................................... [[32mPASS[0m in 1.39s]
+[0m14:02:53.514922 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:02:53.515512 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:02:53.516201 [info ] [Thread-1 (]: 11 of 12 START test unique_payments_payment_id ................................. [RUN]
+[0m14:02:53.516885 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493, now test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12)
+[0m14:02:53.517389 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:02:53.523833 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12"
+[0m14:02:53.524927 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:02:53.527907 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12"
+[0m14:02:53.529122 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select payment_id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+  where payment_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:53.529567 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:54.412888 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:b17c16a7-df64-40c6-b792-43f704f3c2a1&page=queryresults
+[0m14:02:54.935551 [info ] [Thread-1 (]: 11 of 12 PASS unique_payments_payment_id ....................................... [[32mPASS[0m in 1.42s]
+[0m14:02:54.936690 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:02:54.937271 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc
+[0m14:02:54.937927 [info ] [Thread-1 (]: 12 of 12 START test unique_payments_paymentmethod .............................. [RUN]
+[0m14:02:54.938653 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12, now test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc)
+[0m14:02:54.939166 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc
+[0m14:02:54.945416 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc"
+[0m14:02:54.946562 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc
+[0m14:02:54.949382 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc"
+[0m14:02:54.950184 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select paymentmethod as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+  where paymentmethod is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:02:54.950603 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:55.806712 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:1ae398fe-968b-4e5b-a2d8-8a55189d7fab&page=queryresults
+[0m14:02:56.370830 [error] [Thread-1 (]: 12 of 12 FAIL 4 unique_payments_paymentmethod .................................. [[31mFAIL 4[0m in 1.43s]
+[0m14:02:56.371738 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc
+[0m14:02:56.373687 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:02:56.376055 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:02:56.376425 [debug] [MainThread]: Connection 'test.dbt_crash_course_vone.unique_payments_paymentmethod.09dcdef8cc' was properly closed.
+[0m14:02:56.376866 [info ] [MainThread]: 
+[0m14:02:56.377213 [info ] [MainThread]: Finished running 12 data tests in 0 hours 0 minutes and 17.22 seconds (17.22s).
+[0m14:02:56.379587 [debug] [MainThread]: Command end result
+[0m14:02:56.403943 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m14:02:56.405529 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m14:02:56.410807 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/run_results.json
+[0m14:02:56.411102 [info ] [MainThread]: 
+[0m14:02:56.411397 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m14:02:56.411685 [info ] [MainThread]: 
+[0m14:02:56.411917 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m14:02:56.412116 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m14:02:56.412264 [info ] [MainThread]: 
+[0m14:02:56.412448 [info ] [MainThread]:   compiled code at target/compiled/dbt_crash_course_vone/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m14:02:56.412601 [info ] [MainThread]: 
+[0m14:02:56.412781 [error] [MainThread]: [31mFailure in test unique_payments_paymentmethod (models/schema.yml)[0m
+[0m14:02:56.412960 [error] [MainThread]:   Got 4 results, configured to fail if != 0
+[0m14:02:56.413097 [info ] [MainThread]: 
+[0m14:02:56.413267 [info ] [MainThread]:   compiled code at target/compiled/dbt_crash_course_vone/models/schema.yml/unique_payments_paymentmethod.sql
+[0m14:02:56.413425 [info ] [MainThread]: 
+[0m14:02:56.413595 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=2 SKIP=0 TOTAL=12
+[0m14:02:56.416133 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 18.66955, "process_in_blocks": "0", "process_kernel_time": 0.496038, "process_mem_max_rss": "211058688", "process_out_blocks": "0", "process_user_time": 2.377547}
+[0m14:02:56.416486 [debug] [MainThread]: Command `dbt test` failed at 14:02:56.416430 after 18.67 seconds
+[0m14:02:56.416787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10580d2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10580c9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123b9c50>]}
+[0m14:02:56.417038 [debug] [MainThread]: Flushing usage events
+[0m14:02:56.622197 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:05:10.372669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104203f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104282190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104282790>]}
+
+
+============================== 14:05:10.376027 | 2b922ca0-3e69-48c1-8f2d-ec05c6d8494c ==============================
+[0m14:05:10.376027 [info ] [MainThread]: Running with dbt=1.9.1
+[0m14:05:10.376360 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/henk/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:05:11.143704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b922ca0-3e69-48c1-8f2d-ec05c6d8494c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042a8610>]}
+[0m14:05:11.168251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b922ca0-3e69-48c1-8f2d-ec05c6d8494c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1022f1d90>]}
+[0m14:05:11.168666 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:05:11.256664 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m14:05:11.334808 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m14:05:11.335312 [debug] [MainThread]: Partial parsing: updated file: dbt_crash_course_vone://models/example/schema.yml
+[0m14:05:11.335574 [debug] [MainThread]: Partial parsing: updated file: dbt_crash_course_vone://models/schema.yml
+[0m14:05:11.556598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b922ca0-3e69-48c1-8f2d-ec05c6d8494c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b9b550>]}
+[0m14:05:11.593009 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m14:05:11.594787 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m14:05:11.612395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b922ca0-3e69-48c1-8f2d-ec05c6d8494c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f11810>]}
+[0m14:05:11.612679 [info ] [MainThread]: Found 4 models, 1 seed, 10 data tests, 489 macros
+[0m14:05:11.612846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b922ca0-3e69-48c1-8f2d-ec05c6d8494c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d9a990>]}
+[0m14:05:11.613889 [info ] [MainThread]: 
+[0m14:05:11.614066 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:05:11.614194 [info ] [MainThread]: 
+[0m14:05:11.614420 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:05:11.616336 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-crash-course-vone_dbt_crash_course'
+[0m14:05:11.616516 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:05:12.017619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b922ca0-3e69-48c1-8f2d-ec05c6d8494c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b4fe90>]}
+[0m14:05:12.018707 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:05:12.022352 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:05:12.022683 [info ] [Thread-1 (]: 1 of 10 START test not_null_customers_first_name ............................... [RUN]
+[0m14:05:12.023181 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-crash-course-vone_dbt_crash_course, now test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b)
+[0m14:05:12.023436 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:05:12.041397 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b"
+[0m14:05:12.042278 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:05:12.055411 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b"
+[0m14:05:12.056146 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_name
+from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+where first_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:12.056494 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:12.964631 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:00013e5a-4e15-4611-ab08-964a890b3369&page=queryresults
+[0m14:05:13.570900 [info ] [Thread-1 (]: 1 of 10 PASS not_null_customers_first_name ..................................... [[32mPASS[0m in 1.55s]
+[0m14:05:13.572136 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b
+[0m14:05:13.572616 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:05:13.573101 [info ] [Thread-1 (]: 2 of 10 START test not_null_customers_id ....................................... [RUN]
+[0m14:05:13.573600 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_customers_first_name.602d132c3b, now test.dbt_crash_course_vone.not_null_customers_id.422908bfae)
+[0m14:05:13.573954 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:05:13.579628 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_customers_id.422908bfae"
+[0m14:05:13.581026 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:05:13.583831 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_customers_id.422908bfae"
+[0m14:05:13.584922 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_customers_id.422908bfae: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_customers_id.422908bfae"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:13.585372 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:14.210142 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:458012fb-de7d-4563-93d3-056cd29d0c8f&page=queryresults
+[0m14:05:15.052229 [info ] [Thread-1 (]: 2 of 10 PASS not_null_customers_id ............................................. [[32mPASS[0m in 1.48s]
+[0m14:05:15.053232 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_customers_id.422908bfae
+[0m14:05:15.053662 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:05:15.054149 [info ] [Thread-1 (]: 3 of 10 START test not_null_customers_last_name ................................ [RUN]
+[0m14:05:15.054655 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_customers_id.422908bfae, now test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb)
+[0m14:05:15.055023 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:05:15.060304 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb"
+[0m14:05:15.061351 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:05:15.063977 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb"
+[0m14:05:15.064860 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select last_name
+from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+where last_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:15.065275 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:15.708927 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:67949c61-d8da-44f4-9479-e8b9fc5a5236&page=queryresults
+[0m14:05:16.221925 [info ] [Thread-1 (]: 3 of 10 PASS not_null_customers_last_name ...................................... [[32mPASS[0m in 1.17s]
+[0m14:05:16.223100 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb
+[0m14:05:16.223689 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:05:16.224372 [info ] [Thread-1 (]: 4 of 10 START test not_null_my_second_dbt_model_id ............................. [RUN]
+[0m14:05:16.224991 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_customers_last_name.3900f94ffb, now test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:05:16.225371 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:05:16.232398 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:05:16.233620 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:05:16.236111 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:05:16.236818 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `dbt-crash-course-vone`.`dbt_crash_course`.`my_second_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:16.237225 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:16.819044 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:0a0f5200-c58f-48b0-92d5-a74e37c2fc97&page=queryresults
+[0m14:05:17.276088 [info ] [Thread-1 (]: 4 of 10 PASS not_null_my_second_dbt_model_id ................................... [[32mPASS[0m in 1.05s]
+[0m14:05:17.276972 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778
+[0m14:05:17.277364 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:05:17.277831 [info ] [Thread-1 (]: 5 of 10 START test not_null_payments_payment_id ................................ [RUN]
+[0m14:05:17.278328 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd)
+[0m14:05:17.278917 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:05:17.284264 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd"
+[0m14:05:17.285127 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:05:17.287531 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd"
+[0m14:05:17.288610 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select payment_id
+from `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+where payment_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:17.289060 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:18.122620 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:b4f23ac4-013f-4d34-b879-c698eb39a45b&page=queryresults
+[0m14:05:18.738246 [info ] [Thread-1 (]: 5 of 10 PASS not_null_payments_payment_id ...................................... [[32mPASS[0m in 1.46s]
+[0m14:05:18.739105 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd
+[0m14:05:18.739529 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:05:18.740033 [info ] [Thread-1 (]: 6 of 10 START test not_null_payments_paymentmethod ............................. [RUN]
+[0m14:05:18.740543 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_payments_payment_id.581e6708cd, now test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87)
+[0m14:05:18.740909 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:05:18.747302 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87"
+[0m14:05:18.748480 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:05:18.751380 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87"
+[0m14:05:18.752542 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select paymentmethod
+from `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+where paymentmethod is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:18.753019 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:19.379224 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:b1221b10-1ed7-4609-bff8-d88daf32db51&page=queryresults
+[0m14:05:19.892999 [info ] [Thread-1 (]: 6 of 10 PASS not_null_payments_paymentmethod ................................... [[32mPASS[0m in 1.15s]
+[0m14:05:19.893420 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87
+[0m14:05:19.893624 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:05:19.893953 [info ] [Thread-1 (]: 7 of 10 START test unique_customers_id ......................................... [RUN]
+[0m14:05:19.894316 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.not_null_payments_paymentmethod.0c617e8d87, now test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20)
+[0m14:05:19.894524 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:05:19.897889 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20"
+[0m14:05:19.898346 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:05:19.899663 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20"
+[0m14:05:19.900258 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`customers`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:19.900617 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:20.560737 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:d2e0f64b-0728-41ee-a012-b51b023588f1&page=queryresults
+[0m14:05:21.026471 [info ] [Thread-1 (]: 7 of 10 PASS unique_customers_id ............................................... [[32mPASS[0m in 1.13s]
+[0m14:05:21.027323 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20
+[0m14:05:21.027592 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:05:21.027889 [info ] [Thread-1 (]: 8 of 10 START test unique_my_first_dbt_model_id ................................ [RUN]
+[0m14:05:21.028228 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.unique_customers_id.70f3d3fd20, now test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321)
+[0m14:05:21.028450 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:05:21.031705 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321"
+[0m14:05:21.032718 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:05:21.035597 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321"
+[0m14:05:21.036369 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:21.036835 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:21.814598 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:c868ca24-7089-4a2e-ad0e-1011537c6b1e&page=queryresults
+[0m14:05:22.330335 [info ] [Thread-1 (]: 8 of 10 PASS unique_my_first_dbt_model_id ...................................... [[32mPASS[0m in 1.30s]
+[0m14:05:22.331659 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321
+[0m14:05:22.332246 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:05:22.332974 [info ] [Thread-1 (]: 9 of 10 START test unique_my_second_dbt_model_id ............................... [RUN]
+[0m14:05:22.333694 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.unique_my_first_dbt_model_id.16e066b321, now test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:05:22.334297 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:05:22.342309 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:05:22.344477 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:05:22.347186 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:05:22.348087 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`my_second_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:22.348503 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:23.094081 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:a82b9bc0-2745-457b-b57d-aceac803f367&page=queryresults
+[0m14:05:23.603756 [info ] [Thread-1 (]: 9 of 10 PASS unique_my_second_dbt_model_id ..................................... [[32mPASS[0m in 1.27s]
+[0m14:05:23.606350 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:05:23.606803 [debug] [Thread-1 (]: Began running node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:05:23.607143 [info ] [Thread-1 (]: 10 of 10 START test unique_payments_payment_id ................................. [RUN]
+[0m14:05:23.607629 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_crash_course_vone.unique_my_second_dbt_model_id.57a0f8c493, now test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12)
+[0m14:05:23.608009 [debug] [Thread-1 (]: Began compiling node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:05:23.612565 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12"
+[0m14:05:23.613227 [debug] [Thread-1 (]: Began executing node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:05:23.615526 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12"
+[0m14:05:23.616119 [debug] [Thread-1 (]: On test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_crash_course_vone", "target_name": "dev", "node_id": "test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select payment_id as unique_field
+  from `dbt-crash-course-vone`.`dbt_crash_course`.`payments`
+  where payment_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:05:23.616558 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:24.259137 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-crash-course-vone&j=bq:US:8df5c765-c8f0-4372-8a8c-6e7242cef0d5&page=queryresults
+[0m14:05:24.760953 [info ] [Thread-1 (]: 10 of 10 PASS unique_payments_payment_id ....................................... [[32mPASS[0m in 1.15s]
+[0m14:05:24.761492 [debug] [Thread-1 (]: Finished running node test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12
+[0m14:05:24.762569 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:05:24.763733 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:05:24.763932 [debug] [MainThread]: Connection 'test.dbt_crash_course_vone.unique_payments_payment_id.a01e74ab12' was properly closed.
+[0m14:05:24.764143 [info ] [MainThread]: 
+[0m14:05:24.764327 [info ] [MainThread]: Finished running 10 data tests in 0 hours 0 minutes and 13.15 seconds (13.15s).
+[0m14:05:24.765252 [debug] [MainThread]: Command end result
+[0m14:05:24.779778 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/manifest.json
+[0m14:05:24.781452 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/semantic_manifest.json
+[0m14:05:24.785542 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/henk/Documents/Data Analysis/Projects/dbt-crash-course-vone/dbt_crash_course_vone/target/run_results.json
+[0m14:05:24.785730 [info ] [MainThread]: 
+[0m14:05:24.785941 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:05:24.786093 [info ] [MainThread]: 
+[0m14:05:24.786251 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[0m14:05:24.788936 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 14.454979, "process_in_blocks": "0", "process_kernel_time": 0.459478, "process_mem_max_rss": "217513984", "process_out_blocks": "0", "process_user_time": 2.230991}
+[0m14:05:24.789181 [debug] [MainThread]: Command `dbt test` succeeded at 14:05:24.789136 after 14.46 seconds
+[0m14:05:24.789414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10094a050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100afd850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1009e52d0>]}
+[0m14:05:24.789621 [debug] [MainThread]: Flushing usage events
+[0m14:05:24.985113 [debug] [MainThread]: An error was encountered while trying to flush usage events
